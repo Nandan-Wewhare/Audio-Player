@@ -58,7 +58,7 @@ def load():
 
 def play():
     global index
-    if musiclist.selection_get() == '':
+    if musiclist.selection_get() == " ":
         messagebox.showerror("error", " no song selected")
     else:
         pygame.mixer.music.load(musiclist.selection_get())
